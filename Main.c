@@ -63,7 +63,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     
     initilize();
 
-    // 16 represents the cool down and 1000ms / 16 equals a bit under 60 fps which is how often the boxes will update
+    // 16 represents the cool down and 1000ms / 16 equals a bit over 60 fps which is how often the boxes will update
     SetTimer(overlayHWND, WM_TIMER, 16, (TIMERPROC) TimerProc);
 
     MSG msg;
