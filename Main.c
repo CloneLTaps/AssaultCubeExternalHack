@@ -31,7 +31,7 @@ static HINSTANCE currentInst;  // current instance
 static const WCHAR overlayTitle[100] = L"AssaultCube Overlay";  // The title bar text
 static const LPCSTR targetTitle = "AssaultCube";
 
-// I need to list all functions above the main function and by not putting them in Main.h esentially makes them private
+// You need to list all functions above the main function and not putting them in Main.h esentially makes them private
 ATOM MyRegisterClass(HINSTANCE hInstance);
 BOOL InitInstance(HINSTANCE, int);
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
@@ -59,11 +59,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     height = m_Rect.bottom - m_Rect.top;
     printf("Width:%i Height:%i \n", width, height);
 
-    if (!InitInstance (hInstance, nCmdShow)) return FALSE;
+    if (!InitInstance(hInstance, nCmdShow)) return FALSE;
     
     initilize();
 
-    // 16 represents the cool down and 1000ms / 16 equals a bit under 60 fps which is how often the boxes will update
+    // 16 represents the cool down and 1000ms / 16 equals a bit over 60 fps which is how often the boxes will update
     SetTimer(overlayHWND, WM_TIMER, 16, (TIMERPROC) TimerProc);
 
     MSG msg;

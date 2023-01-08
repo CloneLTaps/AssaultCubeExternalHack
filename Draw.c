@@ -52,9 +52,9 @@ void DrawString(int x, int y, COLORREF color, const char* text)
 
 void DrawESP(int x, int y, float distance, int health, char name[20], HBRUSH hBrush, COLORREF Pen)
 {
-	int width = 1600 / distance;	//18100
+	int width = 1600 / distance;	
 
-	int height = 5000 / distance;	//36000
+	int height = 5000 / distance;	
 
 	DrawBorderBox(x - (width / 2), y - height, width, height, 1, hBrush);
 

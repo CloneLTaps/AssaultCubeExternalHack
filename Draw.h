@@ -4,7 +4,7 @@
 #include <Windows.h>
 #include <wingdi.h>
 
-HDC hdc; // This structure is used to obtain graical components 
+HDC hdc; // This structure is used to obtain graphical components 
 HFONT Font;
 COLORREF TextCOLOR;
 RECT m_Rect;

@@ -41,6 +41,4 @@ void updatePlayer();
 void updateEntities();
 void deallocate();
 
-//void updateBoxes(struct entity *e);
-
 #endif // Addresses_h
