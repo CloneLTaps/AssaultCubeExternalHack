@@ -55,7 +55,7 @@ find calls coming from memory addresses that are similar to our ammos address. A
 equal to the pointer of [ac_client.exe + 18AC00]. Furthermore, ecx is equal to 0x006B0578 which is only offset 0x140 from our ammos address which we know to be 
 0x006B06B8.
 
-![image](https://user-images.githubusercontent.com/83735831/211220130-db3e414a-f8c7-4b5b-b6a5-af5bc14609dc.png) ![image](https://user-images.githubusercontent.com/83735831/211220087-c99caa89-5345-4203-8a29-56b709b76e61.png)
+![image](https://user-images.githubusercontent.com/83735831/211227511-f6322a56-fe1c-4943-9c6d-8f8575cbf626.png) ![image](https://user-images.githubusercontent.com/83735831/211220087-c99caa89-5345-4203-8a29-56b709b76e61.png)
 
 
 This makes me believe that 0x006B0578 is the memory address of where our player object starts and 0x140 represents the relative offset from the start of the player
